@@ -1,0 +1,44 @@
+baseURL = 'https://www.gavingreer.com'
+disablePathToLower =  true
+languageCode = 'en-us'
+
+title = 'Gavin Greer'
+
+theme = "hugo-theme-console"
+
+[params]
+  animateStyle = "animated zoomIn fast"
+  headline = "Hi, I'm Gavin."
+  descriptors = "Texan. Father. Self-Hoster. Jeeper."
+  description = "My personal website and blog for cataloging projects, techy things and other stuff I've learned: mostly Linux stuff, self-hosting, Jeeps and hats."
+  dateformat = "2006-01-02"
+  customCSS = ["css/custom.css", "css/badges.css", "css/responsive-grid.css", "css/highlight.css"]
+
+  [[params.navlinks]]
+  name = "about/"
+  url = "about/"
+
+  [[params.navlinks]]
+  name = "posts/"
+  url = "posts/"
+  
+  [[params.navlinks]]
+  name = "projects/"
+  url = "projects/"
+
+  [[params.navlinks]]
+  name = "photos/"
+  url = "photos/"
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = false
+  tabWidth = 4
+  noClasses = false
+  pygmentsUseClasses = true
+  pygmentsCodefences = true
+  style = 'catppuccin-latte'
