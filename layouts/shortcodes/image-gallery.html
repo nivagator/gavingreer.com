@@ -1,0 +1,19 @@
+<!-- https://www.markusantonwolf.com/blog/guide-for-different-ways-to-access-your-image-resources/ -->
+
+<!-- {{ .Page.Path }} -->
+<ul class="image-gallery" style="list-style-type: none;">
+{{ range .Page.Resources }}
+  <!-- {{ (.Fit "200x200 q50").Permalink }}
+  {{ .Permalink }}
+  {{ .Name }}  
+  {{ .MediaType }}   -->
+  <li>
+    <a href="{{ .Permalink }}" title="{{ .Name }}" class="lightbox-image">
+      <img src='{{ (.Fill "300x300 q50").Permalink }}' alt="{{ .Name }}" title="{{ .Name }}">
+      <!-- <span>{{ .Name }}</span> -->
+    </a>
+  </li>
+{{ end }}
+</ul>
+
+<!-- <script src="/js/lightbox.js"></script> -->
