@@ -1,0 +1,34 @@
+{{ $date := .Get 0 }}
+
+{{$data := index .Site.Data.weeklylinks $date }}
+<div class="row">
+{{ range $key, $value := $data }}
+    <h2><a href="{{.url}}">{{.title}}</a>
+    {{ if .outlet }}
+    <em><span style="font-size: smaller;"> - {{ .outlet }}</span></em>
+    {{ end }}  
+    </h2> 
+    {{ if .youtube }}
+        {{ partial "youtube" . }}
+    {{ end }}
+    {{ if .siteimg }}
+    <img style="margin-bottom: 15px" alt="{{ .imgalt }}" src="{{ .siteimg }}"> 
+    {{ end }}
+    {{ if .imglink }}
+    <img style="margin-bottom: 15px" alt="{{ .imgalt }}" src="{{ .imglink }}">
+    {{ end }}
+    <p>
+        <strong>tl;dr</strong>
+        <br>
+        {{ .tldr | safeHTML }}
+    </p>
+    {{ if .links }}
+    <ul>
+        {{ range .links }} 
+        <li><em><span style="font-size: smaller;"><a href="{{ .url }}">{{ .title }}</a></span></em></li>
+        {{ end }}
+    </ul>
+    {{ end }}
+    <!-- if not last loop, add <hr> -->
+{{ end }}
+</div>
