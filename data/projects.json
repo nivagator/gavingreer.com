@@ -1,0 +1,96 @@
+{
+    "projects": [
+        {
+            "name": "lnkto.co",
+            "tagline":"",
+            "status": "inactive",
+            "publishdate": "2017-06-05",
+            "description": "URL shortening service developed by following a <a href=\"https://www.codingforentrepreneurs.com/\">CFE</a> course on <a href=\"https://www.udemy.com/\">Udemy</a>. Published on <a href=\"https://linode.com\">Linode</a> VPS running <a href=\"https://ubuntu.com/\">Ubuntu</a> and <a href=\"https://www.nginx.com/\">NGINX</a>.",
+            "long": "",
+            "repo": "lnkto",
+            "image": "lnkto-co.png",
+            "imgalt": "lnkto site screenshot",
+            "tech": ["python", "django"],
+            "features": ""
+        },{
+            "name": "brucegreer.com",
+            "status": "active",
+            "publishdate": "2016-10-02",
+            "description": "Website for my Dad's music work. Site published with Media Temple Grid Service.",
+            "url": "http://www.brucegreer.com",
+            "image": "brucegreer-com.png",
+            "imgalt": "brucegreer site screenshot"
+        },{
+            "name": "sineanalytics.com",
+            "description": "Company website for a local data reporting & analytics business.",
+            "url": "http://www.sineanalytics.com",
+            "image": "sineanalytics-com.png",
+            "imgalt": "sine site screenshot"
+        },{
+            "name": "tweetme",
+            "status": "inactive",
+            "publishdate": "2017-04-28",
+            "description": "Django web project clone of Twitter. Built following a CFE Django tutorial ",
+            "repo": "tweetme"
+        },{
+            "name": "weather app",
+            "status": "active",
+            "publishdate": "2020-03-06",
+            "description": "Simple JavaScript weather app using the browser location, DarkSky API and Skycons canvas elements.",
+            "image": "wxapp.png",
+            "url": "https://gavingreer.com/wx/",
+            "repo": "wxapp"
+        },{
+            "name": "plates",
+            "status": "in development",
+            "description": "Web app to calculate the plates required to be added to a barbell to acheive a desired lift weight."
+        },{
+            "name": "gavingreer.com",
+            "status": "active",
+            "publishdate": "2020-02-02",
+            "description": "My personal website and blog.",
+            "url": "/",
+            "repo": "personal-site",
+            "image": "gavingreer-com.png",
+            "imgalt": "gavingreer site screenshot"
+        },{
+            "name": "HASH Check App",
+            "status": "active",
+            "publishdate": "2017-01-26",
+            "description": "Project started to practice practical application of Python. App will generate a HASH string for a given file and, if provided, compare it to a control. ",
+            "repo": "hash-check-app"
+        },{
+            "name": "SSRS Report Emailer",
+            "status": "active",
+            "publishdate": "2018-03-09",
+            "description": "Script package to automate the rendering of an SSRS report with or without customized parameter selection to various formats and subsequently send the report files to email recipients.",
+            "repo": "python-download-ssrs"
+        },{
+            "name": "twitterbot",
+            "status": "active",
+            "publishdate": "2018-05-15",
+            "description": "Shell based twitterbot created by following a Digital Ocean guide using the pythong tweepy library. ",
+            "repo": "python_twitterbot"
+        },{
+            "name": "server files",
+            "status": "active",
+            "publishdate": "2020-02-06",
+            "description": "Collection of files used to set up and customize a new shell environment.",
+            "repo": "server-files"
+        },{
+            "name": "dotfiles",
+            "status": "in development",
+            "publishdate": "2020-07-23",
+            "description": "Working to develop my personalized dotfiles for linux desktop systems.",
+            "repo": "dotfiles"
+        },{
+            "name": "darksky proxy",
+            "status": "active",
+            "description": "Simple Node.js proxy server for the DarkSky weather API. Adapted from <a href=\"https://www.spatialtimes.com/2019/03/Create-a-JavaScript-Weather-App-with-Location-Data-Part-2/\">Spatial Times</a>",
+            "repo": "darksky_proxy",
+            "publishdate": "2020-03-05"
+
+        }
+    ]
+}
+
