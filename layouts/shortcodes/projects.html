@@ -1,0 +1,44 @@
+{{$data := index .Site.Data.projects.projects }}
+<div class="projects">
+{{ range $key, $value := $data }}
+  <div class="row">
+    {{ if .image }}
+    <div class="col-7">
+    {{ else }}
+    <div class="col-12">
+    {{ end }}
+      <h2 class="title">
+        {{ if and (eq .status "active") (.url) }}
+        <a href="{{ .url }}">{{ .name }}</a>
+        {{ else }}
+        {{ .name }}
+        {{ end }}
+      </h2>
+      <small>
+        {{ if .publishdate}}
+        Published on: <span itemprop="datePublished"></span>{{ .publishdate }} | </span>
+        {{ end }}
+      </small>
+      {{ if eq .status "inactive" }}
+      <span class="badge badge-danger">{{ strings.ToUpper .status }}</span>
+      {{ else if eq .status "in development" }}
+      <span class="badge badge-default">{{ strings.ToUpper .status }}</span>
+      {{ else }}
+      <span class="badge badge-success">{{ strings.ToUpper .status }}</span>
+      {{ end }}
+      {{ if .description }}
+      <p class="">{{ .description | safeHTML }}</p>
+      {{ end }}
+      {{ if .repo }}
+      <a href="https://github.com/nivagator/{{ .repo }}">Github Repo</a>
+      {{ end }}
+      </div>
+    {{ if .image }}
+    <div class="col-5">
+        <img class="site" alt="{{ .imgalt }}" src="/assets/img/{{ .image }}">
+    </div>
+    {{ end }}
+  </div>
+<!-- if not last insert HR -->
+{{ end }}
+</div>
