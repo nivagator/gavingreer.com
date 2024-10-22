@@ -1,10 +1,10 @@
 ---
 categories:
 - tutorial
-- linux
 comments: true
 date: "2020-02-28T00:00:00Z"
 title: Change Linux Hostname
+tags: ["linux"]
 url: /tutorial/linux/2020/02/28/set-hostname
 ---
 

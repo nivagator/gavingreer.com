@@ -1,12 +1,10 @@
 ---
 title: Synology Settings for NFS
 date: "2020-03-06T00:00:00Z"
-description: A quick run through of the settings required to open up your Synology
-  NAS for mounting via NFS.
+description: A quick run through of the settings required to open up your Synology NAS for mounting via NFS.
 categories:
-- synology
-- linux
 - tutorial
+tags: ["linux","nfs","synology"]
 url: 2020/03/06/synology-nfs-mount
 ---
 I've been using a Synology NAS on my home network for several years. They make a great product for anyone who wants a simple NAS with lots of flexibility. I use it to pass files between systems on my network quite a bit. Here's a quick walkthrough of settings within Synology's DSM to enable mounting the NAS over the network.  

@@ -1,11 +1,11 @@
 ---
 categories:
 - tutorial
-- vim
 date: "2020-01-27T00:00:00Z"
 excerpt_separator: <!--more-->
 title: How to quit VIM
 url: tutorial/vim/2020/01/27/how-to-quit-vim
+tags: ["vim","linux","dev"]
 ---
 
 Welcome to the wonderful world of VIM. :)

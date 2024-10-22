@@ -1,11 +1,11 @@
 ---
 categories:
 - how i use
-- git
 date: "2020-02-07T00:00:00Z"
 excerpt_separator: <!--more-->
 title: How I Use Git
 url: 2020/02/07/how-i-use-git
+tags: ["git","dev"]
 ---
 Git is an open source version control system.
 
