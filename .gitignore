@@ -27,6 +27,7 @@ static/img/*
 /gitless/
 
 zProjectInfo/
+zignored/
 
 build.md
 todo.md
