@@ -3,6 +3,7 @@ title: "Mobile, Al"
 date: 2024-08-05T12:38:53-05:00
 type: gallery
 image: mobile-al-20240805_04.jpg
+draft: true
 ---
 
 August 5th, 2024
