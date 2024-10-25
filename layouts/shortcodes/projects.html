@@ -1,6 +1,6 @@
 {{$data := index .Site.Data.projects.projects }}
 <div class="projects">
-{{ range $key, $value := $data }}
+{{ range $key, $value := (sort $data ".sort" "asc")}}
   <div class="row">
     {{ if .image }}
     <div class="col-7">
@@ -9,7 +9,7 @@
     {{ end }}
       <h2 class="title">
         {{ if and (eq .status "active") (.url) }}
-        <a href="{{ .url }}">{{ .name }}</a>
+        <a href="{{ .url }}" target="_blank">{{ .name }}</a>
         {{ else }}
         {{ .name }}
         {{ end }}
@@ -30,7 +30,7 @@
       <p class="">{{ .description | safeHTML }}</p>
       {{ end }}
       {{ if .repo }}
-      <a href="https://github.com/nivagator/{{ .repo }}">Github Repo</a>
+      <a href="https://github.com/nivagator/{{ .repo }}" target="_blank">Github Repo</a>
       {{ end }}
       </div>
     {{ if .image }}
