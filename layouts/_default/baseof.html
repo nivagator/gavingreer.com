@@ -29,7 +29,7 @@
     {{ range .Site.Params.customCSS -}}
     <link rel="stylesheet" href="{{ . | relURL }}">
     {{- end }}
-    
+    {{- partial "plausible.html" . -}}
     {{- partial "header.html" . -}}
 </head>
 <body class="terminal">
