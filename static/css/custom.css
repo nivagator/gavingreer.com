@@ -138,6 +138,9 @@ img {
     max-width: 100%;
     margin: 0 0 var(--global-line-height) 0;
   }
+  .bc-path-links {
+    display: none;
+  }
 }
 
 ul ul {
@@ -244,7 +247,9 @@ ul.image-gallery {
   word-wrap:normal !important;
 }
 /* fix random li marker at top of page */
-ul>li::after {
+ul.social-media-list>li::after, 
+ul.contact-list>li::after
+{
   content: "";
 }
 
