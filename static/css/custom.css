@@ -243,6 +243,10 @@ ul.image-gallery {
   font-size: smaller;  
   word-wrap:normal !important;
 }
+/* fix random li marker at top of page */
+ul>li::after {
+  content: "";
+}
 
 .wrapper {
   /* max-width: calc(860px - 30px* 2); */
