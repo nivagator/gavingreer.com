@@ -7,13 +7,16 @@ theme = "hugo-theme-console"
 
 [params]
   animateStyle = "animated zoomIn fast"
+  
   headline = "Hi, I'm Gavin."
   descriptors = "Texan. Father. Self-Hoster. Jeeper."
   description = "My personal website and blog for cataloging projects, techy things and other stuff I've learned: mostly Linux stuff, self-hosting and my Jeep."
+  
   email = "gavin@gavingreer.com"
-  linkedinUser = 'gavingreer'
-  githubUser = 'nivagator'
+  contactEmail = "hello@gavingreer.com"
+  
   dateformat = "2006-01-02"
+  
   customCSS = ["css/custom.css", "css/badges.css", "css/responsive-grid.css", "css/highlight.css"]
 
   [[params.navlinks]]
@@ -35,6 +38,11 @@ theme = "hugo-theme-console"
 [[params.navlinks]]
   name = "cv/"
   url = "cv/"
+
+
+[params.social]
+  linkedinUser = 'gavingreer'
+  githubUser = 'nivagator'
 
 [markup.highlight]
   codeFences = true

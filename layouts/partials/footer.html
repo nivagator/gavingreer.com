@@ -1,0 +1,41 @@
+<div class="footer">
+<div class="wrapper">
+    <!-- <h2 class="footer-heading">{{ .Site.Title }}</h2> -->
+    <div class="footer-cols-wrapper">
+      <div class="footer-cols footer-cols-1">
+        <ul class="contact-list">
+          {{ if .Site.Params.contactEmail }}
+          <li class="p-name">
+            Contact Me:
+          </li>
+          <li><a class="u-email" href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="footer-cols footer-cols-2">
+        <ul class="social-media-list">
+            {{ if .Site.Params.Social.facebookUser }} <li><a href="https://www.facebook.com/{{ .Site.Params.Social.facebookUser }}"><svg class="svg-icon"><use xlink:href="/assets/social-icons.svg#facebook"></use></svg> <span class="username">{{ .Site.Params.Social.facebookUser }}</span></a></li>{{ end }}
+            {{ if .Site.Params.Social.flickrUser }}   <li><a href="https://www.flickr.com/photos/{{ .Site.Params.Social.flickrUser }}"><svg class="svg-icon"><use xlink:href="/assets/social-icons.svg#flickr"></use></svg> <span class="username">{{ .Site.Params.Social.flickrUser }}</span></a></li>{{ end }}
+            {{ if .Site.Params.Social.githubUser }}   <li><a href="https://github.com/{{ .Site.Params.Social.githubUser }}"><svg class="svg-icon"><use xlink:href="/assets/social-icons.svg#github"></use></svg> <span class="username">{{ .Site.Params.Social.githubUser }}</span></a></li>{{ end }}
+            {{ if .Site.Params.Social.instagramUser }}<li><a href="https://instagram.com/{{ .Site.Params.Social.instagramUser }}"><svg class="svg-icon"><use xlink:href="/assets/social-icons.svg#instagram"></use></svg> <span class="username">{{ .Site.Params.Social.instagramUser }}</span></a></li>{{ end }}
+            {{ if .Site.Params.Social.linkedinUser }} <li><a href="https://www.linkedin.com/in/{{ .Site.Params.Social.linkedinUser }}"><svg class="svg-icon"><use xlink:href="/assets/social-icons.svg#linkedin"></use></svg> <span class="username">{{ .Site.Params.Social.linkedinUser }}</span></a></li>{{ end }}
+            {{ if .Site.Params.Social.pinterestUser }}<li><a href="https://www.pinterest.com/{{ .Site.Params.Social.pinterestUser }}"><svg class="svg-icon"><use xlink:href="/assets/social-icons.svg#pinterest"></use></svg> <span class="username">{{ .Site.Params.Social.pinterestUser }}</span></a></li>{{ end }}
+            {{ if .Site.Params.Social.twitterUser }}  <li><a href="https://www.twitter.com/{{ .Site.Params.Social.twitterUser }}"><svg class="svg-icon"><use xlink:href="/assets/social-icons.svg#twitter"></use></svg> <span class="username">{{ .Site.Params.Social.twitterUser }}</span></a></li>{{ end }}
+            {{ if .Site.Params.Social.youtubeUser }}  <li><a href="https://youtube.com/{{ .Site.Params.Social.youtubeUser }}"><svg class="svg-icon"><use xlink:href="/assets/social-icons.svg#youtube"></use></svg> <span class="username">{{ .Site.Params.Social.youtubeUser }}</span></a></li>{{ end }}
+            {{ if .Site.Params.Social.googleplusUser}}<li><a href="https://plus.google.com/{{ .Site.Params.Social.googleplusUser }}"><svg class="svg-icon"><use xlink:href="/assets/social-icons.svg#googleplus"></use></svg> <span class="username">{{ .Site.Params.Social.googleplusUser }}</span></a></li>{{ end }}
+            {{ if .Site.Params.Social.rss }}          <li><a href="feed.xml"><svg class="svg-icon"><use xlink:href="/assets/social-icons.svg#rss"></use></svg> <span>{{ .Site.Params.Social.rss  }}</span></a></li>{{ end }}
+            {{ if and .Site.Params.Social.mstUser .Site.Params.Social.mstInstance }}<li><a href="https://{{ .Site.Params.Social.mstInstance }}/@{{ .Site.Params.Social.mstUser }}"><svg class="svg-icon"><use xlink:href="/assets/social-icons.svg#mastodon"></use></svg> <span class="username">{{ .Site.Params.Social.mstUser }}</span></a></li>{{ end }}
+        </ul>
+      </div>
+      <div class="footer-cols footer-cols-3">
+        <p>{{ .Site.Params.description }}</p>
+      </div>
+    </div>
+</div>
+<!-- copyright -->
+<div class="copyright">
+    Powered by <a href="https://gohugo.io/">Hugo</a> with
+    <a href="https://github.com/mrmierzejewski/hugo-theme-console/">Console Theme</a>. 
+</div>
+</div>
+
