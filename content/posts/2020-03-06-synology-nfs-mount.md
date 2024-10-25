@@ -35,7 +35,7 @@ Once the folder has been created, we have to allow NFS access for the RaspberryP
   - Select the `backups` Shared folder and click Edit > NFS Permissions.
   ![control-panel](/assets/img/control-panel.jpg)
     *Note:* Make note of the folder mount path at the bottom left of this window. We'll need this later.  
-    ![mount-path](/assets/img/mount-path.jpg)
+    ![mount-path](/assets/img/mount-path.png)
   - Click Create and match these settings (changes in **bold**):
     - **Hostname or IP**: Enter the local IP address (mine is `192.168.1.62`)   
       If you want to open access to this folder from all machines on your local network, use the `*` wildcard instead of the specific LAN IP address.
