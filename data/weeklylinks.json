@@ -44,7 +44,6 @@
             "title": "Moving efficiently in the CLI",
             "url": "https://clementc.github.io/blog/2018/01/25/moving_cli/",
             "outlet": "CLÉMENT CHASTAGNOL",
-            "siteimg": "moving_cli.png",
             "imglink": "https://clementc.github.io/figures/moving_cli.png",
             "imgalt": "moving_cli",
             "tldr": "I originally saw this on Twitter. It's a handy reference for quickly navigating through text in the CLI. I didn't know most of these keyboard shortcuts. Neat."

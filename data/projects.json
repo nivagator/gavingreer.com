@@ -8,7 +8,7 @@
             "description": "URL shortening service developed by following a <a href=\"https://www.codingforentrepreneurs.com/\">CFE</a> course on <a href=\"https://www.udemy.com/\">Udemy</a>. Published on <a href=\"https://linode.com\">Linode</a> VPS running <a href=\"https://ubuntu.com/\">Ubuntu</a> and <a href=\"https://www.nginx.com/\">NGINX</a>.",
             "long": "",
             "repo": "lnkto",
-            "image": "lnkto-co.png",
+            "image": "lnkto-co.jpg",
             "imgalt": "lnkto site screenshot",
             "tech": ["python", "django"],
             "features": ""
@@ -18,13 +18,13 @@
             "publishdate": "2016-10-02",
             "description": "Website for my Dad's music work. Site published with Media Temple Grid Service.",
             "url": "http://www.brucegreer.com",
-            "image": "brucegreer-com.png",
+            "image": "brucegreer-com.jpg",
             "imgalt": "brucegreer site screenshot"
         },{
             "name": "sineanalytics.com",
             "description": "Company website for a local data reporting & analytics business.",
             "url": "http://www.sineanalytics.com",
-            "image": "sineanalytics-com.png",
+            "image": "sineanalytics-com.jpg",
             "imgalt": "sine site screenshot"
         },{
             "name": "tweetme",
@@ -37,7 +37,7 @@
             "status": "active",
             "publishdate": "2020-03-06",
             "description": "Simple JavaScript weather app using the browser location, DarkSky API and Skycons canvas elements.",
-            "image": "wxapp.png",
+            "image": "wxapp.jpg",
             "url": "https://gavingreer.com/wx/",
             "repo": "wxapp"
         },{
@@ -51,7 +51,7 @@
             "description": "My personal website and blog.",
             "url": "/",
             "repo": "personal-site",
-            "image": "gavingreer-com.png",
+            "image": "gavingreer-com.jpg",
             "imgalt": "gavingreer site screenshot"
         },{
             "name": "HASH Check App",

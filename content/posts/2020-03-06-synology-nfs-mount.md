@@ -27,15 +27,15 @@ In this example, I'll be creating a shared folder called `backups`, granting NFS
 
 Navigate to the Synology DSM, open the Control Panel and select Shared Folder.
   - Click Create and follow the Wizard prompts. I typically agree to the default values with the exception of disabling the Recycle Bin.
-  ![create-share](/assets/img/create-share.png)
+  ![create-share](/assets/img/create-share.jpg)
 
 ## Edit Shared Folder NFS Permissions  
 
 Once the folder has been created, we have to allow NFS access for the RaspberryPi to connect to the shared folder on the Synology NAS. We do this by adding an NFS rule mapped to the IP address of the Pi (`192.168.1.62`).
   - Select the `backups` Shared folder and click Edit > NFS Permissions.
-  ![control-panel](/assets/img/control-panel.png)
+  ![control-panel](/assets/img/control-panel.jpg)
     *Note:* Make note of the folder mount path at the bottom left of this window. We'll need this later.  
-    ![mount-path](/assets/img/mount-path.png)
+    ![mount-path](/assets/img/mount-path.jpg)
   - Click Create and match these settings (changes in **bold**):
     - **Hostname or IP**: Enter the local IP address (mine is `192.168.1.62`)   
       If you want to open access to this folder from all machines on your local network, use the `*` wildcard instead of the specific LAN IP address.
@@ -45,7 +45,7 @@ Once the folder has been created, we have to allow NFS access for the RaspberryP
     - Select Enable asynchronous (default)
     - Deselect Allow connection from non-privileged... (default)
     - **Select the checkbox for "Allow users to access mounted subfolders"**
-    ![nfs-rule](/assets/img/nfs-rule.png)
+    ![nfs-rule](/assets/img/nfs-rule.jpg)
   - Click OK. Click OK. 
 
 ## Enable NFS Access through the Synology Firewall  
@@ -53,10 +53,10 @@ Once the folder has been created, we have to allow NFS access for the RaspberryP
 If you have the Synology NAS built in firewall active, you'll need to enable rules to allow the required NFS ports. *If your firewall is disabled, you can skip this step.*
 
 - Check your firewall status in the DSM Control Panel under the Security > Firewall tab.
-  ![cp-firewall](/assets/img/cp-firewall.png)
+  ![cp-firewall](/assets/img/cp-firewall.jpg)
 - Click Edit Rules > Create 
 - Under Ports choose Select from a list of built-in applications and click Select. Find Mac/Linux file server and check the box to enable. 
-  ![firewall-nfs](/assets/img/firewall-nfs.png)
+  ![firewall-nfs](/assets/img/firewall-nfs.jpg)
 - If you plan to use this shared folder with Windows machines as well, enable the Windows file server too. 
 - Click OK.
 - Under Action, select Allow.
