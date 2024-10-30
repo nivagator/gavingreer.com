@@ -18,10 +18,20 @@
             "status": "active",
             "sort": 2,
             "publishdate": "2016-10-02",
-            "description": "Website for my Dad's music work. Site published with Media Temple Grid Service.",
+            "description": "Website for my Dad's music work. Site built using Hugo on a custom template and deployed to Linode and driven by an NGINX docker container.",
             "url": "http://www.brucegreer.com",
+            "repo": "brucegreer.com",
             "image": "brucegreer-com.jpg",
             "imgalt": "brucegreer site screenshot"
+        },{
+            "name": "store.brucegreer.com",
+            "status": "active",
+            "sort": 30,
+            "publishdate": "2016-10-02",
+            "description": "Web store for my Dad's music work. Site built on Wordpress and deployed to Linode as a docker container.",
+            "url": "http://store.brucegreer.com",
+            "image": "bgstore.jpg",
+            "imgalt": "brucegreer store site screenshot"
         },{
             "name": "sineanalytics.com",
             "sort": 98,
@@ -55,9 +65,9 @@
             "status": "active",
             "sort": 1,
             "publishdate": "2020-02-02",
-            "description": "My personal website and blog.",
+            "description": "My personal website and blog. Built on Hugo and deployed to Linode.",
             "url": "/",
-            "repo": "personal-site",
+            "repo": "gavingreer.com",
             "image": "gavingreer-com.jpg",
             "imgalt": "gavingreer site screenshot"
         },{
@@ -108,21 +118,21 @@
             "status": "active",
             "sort": 3,
             "publishdate": "2023-09-16",
-            "description": "Website for the FMHS Swim and Dive Booster Club.",
+            "description": "Website for the FMHS Swim and Dive Booster Club. Built on Hugo and deployed to Linode.",
             "url": "https://www.fmhswaterjags.com",
             "image": "fmhswaterjags.com.jpg",
             "imgalt": "fmhswaterjags site screenshot",
-            "repo": "https://github.com/nivagator/fmhs-swim-site"
+            "repo": "fmhs-swim-site"
         },{
             "name": "forestwoodchoir.com",
             "status": "active",
             "sort": 4,
             "publishdate": "2024-08-11",
-            "description": "Website for the FMS Choir Booster Club.",
+            "description": "Website for the FMS Choir Booster Club. Built on Hugo and deployed to Linode.",
             "url": "https://www.forestwoodchoir.com",
             "image": "forestwoodchoir.com.jpg",
             "imgalt": "forestwood choir site screenshot",
-            "repo": "https://github.com/nivagator/fms-choir-site"
+            "repo": "fms-choir-site"
         }
     ]
 }
