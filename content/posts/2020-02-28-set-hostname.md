@@ -5,7 +5,7 @@ comments: true
 date: "2020-02-28T00:00:00Z"
 title: Change Linux Hostname
 tags: ["linux"]
-url: /tutorial/linux/2020/02/28/set-hostname
+url: /tutorial/linux/2020/02/28/set-hostname.html
 ---
 
 This quick guide outlines the steps needed to check and update the hostname of a server running Linux. 
