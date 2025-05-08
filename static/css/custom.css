@@ -185,6 +185,10 @@ ul ul {
   width: 100%;
   display: block;
 }
+/* remove weird hyphen from upper left corner on photos pages */
+ul>li::after { 
+    content:""
+}
 ul.image-gallery {
   list-style-type: none !important;
   padding: 0;
